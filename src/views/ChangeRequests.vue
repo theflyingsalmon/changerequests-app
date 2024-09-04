@@ -77,7 +77,7 @@ export default {
   methods: {
     async fetchChangeRequests() {
       try {
-        const response = await axios.get('https://localhost:44336/api/ChangeRequests');
+        const response = await axios.get('changerequests-api-fsbnhbb3gbccfbgw.ukwest-01.azurewebsites.net/api/ChangeRequests');
         this.changeRequests = response.data;
       } catch (error) {
         console.error('Error fetching change requests:', error);
@@ -100,21 +100,21 @@ export default {
     },
     async createRequest(request) {
       try {
-        await axios.post('https://localhost:44336/api/ChangeRequests', request);
+        await axios.post('changerequests-api-fsbnhbb3gbccfbgw.ukwest-01.azurewebsites.net/api/ChangeRequests', request);
       } catch (error) {
         console.error('Error creating change request:', error);
       }
     },
     async updateRequest(request) {
       try {
-        await axios.put(`https://localhost:44336/api/ChangeRequests/${request.id}`, request);
+        await axios.put(`changerequests-api-fsbnhbb3gbccfbgw.ukwest-01.azurewebsites.net/api/ChangeRequests/${request.id}`, request);
       } catch (error) {
         console.error('Error updating change request:', error);
       }
     },
     async deleteRequest(id) {
       try {
-        await axios.delete(`https://localhost:44336/api/ChangeRequests/${id}`);
+        await axios.delete(`changerequests-api-fsbnhbb3gbccfbgw.ukwest-01.azurewebsites.net/api/ChangeRequests/${id}`);
         this.fetchChangeRequests();
       } catch (error) {
         console.error('Error deleting change request:', error);
