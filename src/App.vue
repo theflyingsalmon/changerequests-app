@@ -5,12 +5,6 @@
         <a class="navbar-brand" href="#">Change Requests App</a>
         <div class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link class="nav-link  me-2" to="/">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link  me-2" to="/change-requests">Change Requests</router-link>
-            </li>
           </ul>
         </div>
       </div>
@@ -23,6 +17,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'App',
 };
