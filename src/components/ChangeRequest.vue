@@ -10,7 +10,7 @@
             <option value="Rejected">Rejected</option>
           </select>
         </div>
-        <div v-if="isEdit" class="col p-2">
+        <div v-if="!isEdit" class="col p-2">
           <div class="col"><label for="userId">User ID:</label></div>
           <div class="col"><input  v-model="changeRequest.userId" id="userId" required /></div>
         </div>
