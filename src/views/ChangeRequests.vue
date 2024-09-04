@@ -107,7 +107,7 @@ export default {
     },
     async updateRequest(request) {
       try {
-        await axios.put(`https://changerequests-api-fsbnhbb3gbccfbgw.ukwest-01.azurewebsites.net/api/ChangeRequests/`, request);
+        await axios.put(`https://changerequests-api-fsbnhbb3gbccfbgw.ukwest-01.azurewebsites.net/api/ChangeRequests/${request.id}`, request);
       } catch (error) {
         console.error('Error updating change request:', error);
       }
